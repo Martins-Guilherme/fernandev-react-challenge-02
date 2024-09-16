@@ -40,9 +40,7 @@ export default function LoginForm() {
       alert('Login efetuado com sucesso.')
     }).catch((error)=>{
       setError(error);
-    }).finally(()=>{
-      setIsRequesting(false)
-    })
+    }).finally( () => setIsRequesting(false));
   };
   
   return (
